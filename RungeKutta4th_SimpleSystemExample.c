@@ -3,8 +3,6 @@
 
 #define N_ODE_EQS 2
 
-
-
 typedef double (*ODE_FUNC) (double, double, double);
 
 /* RUNGE-KUTTAs 4th Method */
