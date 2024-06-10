@@ -2,10 +2,10 @@
 #include <string.h>
 #include <math.h>
 
-#define N_ODE_EQS 12
-#define M_A 1.1
-#define M_B 0.907
-#define G 39.47841760435743
+#define N_ODE_EQS   12
+#define M_A         1.1
+#define M_B         0.907
+#define G           39.47841760435743
 
 typedef double (*ODE_FUNC) (double, double[]);
 
@@ -71,7 +71,7 @@ double f12(double x, double y[]) {
 }
 
 /* Global Array which will hold the function pointers */
-ODE_FUNC    f_array[N_ODE_EQS] = { f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12 };
+ODE_FUNC    f_array[N_ODE_EQS] = { f1, f2, f3, f7, f8, f9, f4, f5, f6, f10, f11, f12 };
 
 int main() 
 {
@@ -118,9 +118,10 @@ int main()
             y[i] = y_old[i] + (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]) / 6;
         }
         
+        t += h;
+        
         printf("t: %lf, x_A: %lf, y_A: %lf, z_A: %lf, x_B: %lf, y_B: %lf, z_B: %lf\n", t, y[0], y[1], y[2], y[3], y[4], y[5]);
 
-        t += h;
     }
 
 
