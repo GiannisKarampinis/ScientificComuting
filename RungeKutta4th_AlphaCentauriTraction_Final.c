@@ -47,9 +47,6 @@ int main()
 
     while (t < target_t) {
         double      k1[N_ODE_EQS], k2[N_ODE_EQS], k3[N_ODE_EQS], k4[N_ODE_EQS];
-        double      y_old[N_ODE_EQS];
-
-        memcpy(y_old, y, sizeof(double) * N_ODE_EQS);
 
         calc_f_arr(f_array, y);
 
@@ -58,7 +55,7 @@ int main()
         }
 
         for (i = 0; i < N_ODE_EQS; i++) {
-            y_modified[i] = y_old[i] + 0.5 * k1[i];
+            y_modified[i] = y[i] + 0.5 * k1[i];
         }
 
         calc_f_arr(f_array, y_modified);
@@ -68,7 +65,7 @@ int main()
         }
 
         for (i = 0; i < N_ODE_EQS; i++) {
-            y_modified[i] = y_old[i] + 0.5 * k2[i];
+            y_modified[i] = y[i] + 0.5 * k2[i];
         }
 
         calc_f_arr(f_array, y_modified);
@@ -78,7 +75,7 @@ int main()
         }
  
         for (i = 0; i < N_ODE_EQS; i++) {
-            y_modified[i] = y_old[i] + k3[i];
+            y_modified[i] = y[i] + k3[i];
         }
 
         calc_f_arr(f_array, y_modified);
@@ -88,7 +85,7 @@ int main()
         }
         
         for (i = 0; i < N_ODE_EQS; i++) {
-            y[i] = y_old[i] + (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]) / 6;
+            y[i] = y[i] + (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]) / 6;
         }
         
         t += h;
