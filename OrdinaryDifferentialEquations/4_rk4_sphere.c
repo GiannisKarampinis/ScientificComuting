@@ -9,16 +9,23 @@ double f(double t, double theta) {
 int main()
 {
     double  theta = 1200;
-    double  h = 1, target_t = 480;
+    double  h = 10, target_t = 480;
     double  t = 0.0;
+    double  k1, k2, k3, k4;
 
     while (t <= target_t) {
         
         /* During the first iter, y is defined by the initial condition */
-        printf("theta: %lf\n", theta);
+        printf("t: %lf, theta: %lf\n", t, theta);
+        
+        k1 = h * f(t, theta);
+        k2 = h * f(t + h/2, theta + k1/2);
+        k3 = h * f(t + h/2, theta + k2/2);
+        k4 = h * f(t + h, theta + k3);
+
+        theta = theta + (k1 + 2 * k2 + 2 * k3 + k4)/6;
         
         t += h;
-        theta = theta + h * f(t, theta);
     }
 
     return 0;
