@@ -1,3 +1,5 @@
+## Problem Description
+
 The differential equation is given by:
 
 $$
@@ -7,7 +9,11 @@ $$
 The initial condition is:
 
 $$
-\ y(0) = 1
+y(0) = 1
 $$
 
-Solve the above equation with Euler's method, assuming that n = 10. Calculate the error between the approximate and the analytical solution of the ODE, if the analytical solution of the ODE is $ y(x) = x + e ^ -x$
+Solve the above equation with Euler's method, assuming that $n = 10$. Calculate the error between the approximate and the analytical solution of the ODE, if the analytical solution of the ODE is:
+
+$$
+y(x) = x + e^{-x}
+$$
