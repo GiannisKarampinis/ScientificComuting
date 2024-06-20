@@ -1,4 +1,4 @@
-##Ordinary Differential Equations (ODEs)
+# Ordinary Differential Equations (ODEs)
 
 ### 1_euler_method: Problem Description
 
