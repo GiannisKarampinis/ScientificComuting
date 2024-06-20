@@ -54,7 +54,9 @@ $$
 
 where \( t \) is time in seconds and \( \theta \) is temperature in Kelvin. Find the temperature of the ball at time \( t = 480 \) seconds using the Euler's method and RK4 method.
 
-### 5_ode_system_euler: System of Differential Equations
+### 5_ode_system_euler_function_pointers: System of Differential Equations
+
+### 5_ode_system_euler_derivatives_array: System of Differential Equations
 
 ### 6_ode_system_RK4: System of Differential Equations
 

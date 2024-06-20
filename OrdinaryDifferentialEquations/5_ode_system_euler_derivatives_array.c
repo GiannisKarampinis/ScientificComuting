@@ -14,7 +14,7 @@ void derivatives(double d[N], double x, double y[])
 
 int main()
 {
-    double      h = 0.1;
+    double      h = 0.01;
     double      target_x = 0.2;
     double      x = 0;
     double      d[N] = { 0 };
