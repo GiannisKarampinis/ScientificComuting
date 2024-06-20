@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
-double f(double x, double y) {
+double f(double x, double y) 
+{
     return -y;
 }
 
-double f_analytical(double x) {
+double f_analytical(double x) 
+{
     return exp(-x);
 }
 

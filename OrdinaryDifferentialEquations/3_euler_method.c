@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-double f(double t, double theta) {
+double f(double t, double theta) 
+{
     return -2.2067 * pow(10, -12) * (pow(theta, 4) - 81 * pow(10, 8));
 }
 
