@@ -23,7 +23,6 @@ int main()
         printf("B[%d] = %lf  ", i, B[i]);
     }
 
-
     /* Backward substitution */
     X[n - 1] = D[n - 1]/A[n - 1];
     for (i = n-2; i >= 0; i--) {
