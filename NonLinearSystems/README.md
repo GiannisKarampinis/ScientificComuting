@@ -25,7 +25,9 @@ Given the lengths of the rods $l_1 = 2$ and $l_2 = 5$, and the desired position 
 
 To solve this problem, we use the laws of robotic arm kinematics, specifically the equations derived from the cosine rule and trigonometric relationships:
 
-![Robotic Arm Image](Resources/RoboticArm.png)
+<div style="text-align:center;">
+    <img src="../Resources/RoboticArm.png" alt="Robotic Arm Image">
+<\div>
 
 $$ x_A = l_1\cos(\theta_1) = 2\cos(\theta_1) $$
 $$ y_A = l_1\sin(\theta_1) = 2\sin(\theta_1) $$
