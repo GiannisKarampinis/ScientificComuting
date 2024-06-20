@@ -1,5 +1,7 @@
 # Ordinary Differential Equations (ODEs)
 
+## What's included?
+
 ### 1_euler_method: Problem Description
 
 The differential equation is given by:
