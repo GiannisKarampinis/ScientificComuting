@@ -27,7 +27,7 @@ To solve this problem, we use the laws of robotic arm kinematics, specifically t
 
 <div style="text-align:center;">
     <img src="../Resources/RoboticArm.png" alt="Robotic Arm Image">
-<\div>
+</div>
 
 $$ x_A = l_1\cos(\theta_1) = 2\cos(\theta_1) $$
 $$ y_A = l_1\sin(\theta_1) = 2\sin(\theta_1) $$
