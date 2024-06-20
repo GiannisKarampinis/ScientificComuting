@@ -33,6 +33,7 @@ $$ x_A = l_1\cos(\theta_1) = 2\cos(\theta_1) $$
 $$ y_A = l_1\sin(\theta_1) = 2\sin(\theta_1) $$
 
 Point B has coordinates:
+
 $$ x = l1\cos(\theta_1) + l2\cos(\theta_2) = 2\cos(theta_1) + 5\cos(\theta_2) $$
 $$ y = l1\sin(\theta_1) + l2\sin(\theta_2) = 2\sin(theta_1) + 5\sin(\theta_2) $$
 
