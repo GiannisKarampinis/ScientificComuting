@@ -6,6 +6,7 @@
 
 typedef int (*SOLVER)(const double *A, const double *B, const double *C, const double *D, double *x_old, double *x_new, int n, double omega);
 
+
 double maxNorm(double x1[], double x2[], int n) {
 	double  maxVal = fabs(x1[0] - x2[0]), tmp;
 	int     i;
