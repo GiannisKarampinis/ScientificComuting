@@ -11,9 +11,9 @@ int main() {
         { 0, 1, 1, 1, 0 }
     };
     
-    double x[5] = { 0, 0, 0, 0, 0 }, x_old[5] = { 1, 1, 1, 0, 0 }, y[5];
-    double error = 1.0, eps = 0.0001, maxValue;
-    int i, j, maxIters = 1000, iters = 0, n = 5;  // Note: n should be 5 to match the size of A
+    double      x[5] = { 0, 0, 0, 0, 0 }, x_old[5] = { 1, 1, 1, 0, 0 }, y[5];
+    double      error = 1.0, eps = 0.0001, maxValue;
+    int         i, j, maxIters = 1000, iters = 0, n = 5;  // Note: n should be 5 to match the size of A
     
     do {
         // Multiplication A*x_old
