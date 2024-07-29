@@ -18,7 +18,12 @@ $$
 \int_Ω  \frac{\partial ^ 2u(x)}{\partial x^2}v(x) dΩ = - \int_Ω f(x)v(x) dΩ
 $$
 
-By applying the integration by parts (Green's Theorem) to the left-hand side to move the derivative from u(x) to the test function v(x):
+By applying the integration by parts (Green's Theorem) to the left-hand side to move the derivative from $u(x)$ to the test function $v(x)$:
+
+$$
+\int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx = \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx
+$$
+
 
 $$
 \int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) dx = \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} dx 
