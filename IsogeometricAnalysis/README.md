@@ -3,6 +3,7 @@
 The governing differential equation for the static structural problem of the 1D Bar is given by:
 
 $$Δu(x) = -f(x)$$
+
 where $Δ$ represents the Laplacian operator. This equation is well known as the Poisson's equation. 
 
 By expanding the laplacian for the 1D Bar problem we end up with the following:
