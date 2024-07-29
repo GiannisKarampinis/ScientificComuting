@@ -19,15 +19,19 @@ $$
 $$
 
 By applying the integration by parts (Green's Theorem) to the left-hand side to move the derivative from u(x) to the test function v(x):
+
 $$
 \int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx = \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx 
 $$
+
 Here the term $\left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b}$ is the boundary term evaluated at the boundaries of the domain a and b. For the domain $Ω = [0,1]$ this becomes:
+
 $$
 \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{0}^{1} - \int_{0}^{1} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx 
 $$
 
 Assuming Dirichlet boundary conditions, where $u(0) = u(1) = 0$ we also consider $v(0)=v(1)=0$. This simplifies the boundary term to zero because the test function v(x) is zero at the boundaries:
+
 $$
 \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{0}^{1} = 0
 $$
