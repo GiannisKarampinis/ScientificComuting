@@ -20,52 +20,6 @@ $$
 
 By applying the integration by parts (Green's Theorem) to the left-hand side to move the derivative from $u(x)$ to the test function $v(x)$:
 
-
-To address the rendering issues with LaTeX on GitHub, we need to ensure that the LaTeX syntax is correct and that it's formatted in a way compatible with GitHub's Markdown rendering engine. GitHub often struggles with more complex LaTeX expressions, so simplifying or formatting carefully can help.
-
-Revised LaTeX Equation
-Here's how you should format the integral equation in GitHub-flavored Markdown:
-
-markdown
-Αντιγραφή κώδικα
-$$
-\int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx = \left. \frac{\partial u(x)}{\partial x} v(x) \right|_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx
-$$
-Key Adjustments
-Use \left. ... \right|: To render the boundary terms correctly.
-Spacing: Make sure you use \, for proper spacing before dx.
-Ensure Proper Markdown Environment: LaTeX in GitHub Markdown works best with double dollar signs $$ ... $$ for block equations.
-Alternative Markdown Approaches
-If you're still having issues with rendering, you can break down the equation into simpler parts or use images for complex formulas. Here's a breakdown example:
-
-1. **Integral Term**:
-
-   $$
-   \int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx
-   $$
-
-2. **Boundary Term**:
-
-   $$
-   \left. \frac{\partial u(x)}{\partial x} v(x) \right|_{a}^{b}
-   $$
-
-3. **Subtraction Term**:
-
-   $$
-   \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx
-   $$
-
-$$
-\int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx = \left. \frac{\partial u(x)}{\partial x} v(x) \right|_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx
-$$
-
-
-$$
-\int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) \, dx = \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} \, dx
-$$
-
-
 $$
 \int_{a}^{b} \frac{\partial^2 u(x)}{\partial x^2} v(x) dx = \left[ \frac{\partial u(x)}{\partial x} v(x) \right]_{a}^{b} - \int_{a}^{b} \frac{\partial u(x)}{\partial x} \frac{\partial v(x)}{\partial x} dx 
 $$
