@@ -15,7 +15,7 @@ This is known as the "Strong form" of the poisson's equation. This equation can 
 So, returning back to our methodology, to derive the weak formulation we multiply the strong form by a test function v(x) and integrate over the domain:
 
 $$
-\int_Ω  \frac{\partial ^ 2u(x)}{\partial x^2}v(x) \, dΩ = - \int_Ω f(x)v(x) \, dΩ
+\int_Ω  \frac{\partial ^ 2u(x)}{\partial x^2}v(x) dΩ = - \int_Ω f(x)v(x) dΩ
 $$
 
 By applying the integration by parts (Green's Theorem) to the left-hand side to move the derivative from u(x) to the test function v(x):
