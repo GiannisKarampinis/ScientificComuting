@@ -1,3 +1,4 @@
 *.exe
 *.pyc
 .vscode/
+IsogeometricAnalysis_Dummy.ipynb
